@@ -1,5 +1,5 @@
 var app = new Vue({
-    el:'#comingsoonContainer',
+    el:'#app',
     data:{
         orgname:'Sanus Healthcare',
         orglogo:'img/logo.png'
