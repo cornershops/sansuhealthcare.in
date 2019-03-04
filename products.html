@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saven Remedies : Products</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Font Awesome 5.4 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2|Muli|Open+Sans|PT+Sans|Source+Sans+Pro|Titillium+Web"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-cs.css">
+</head>
+
+<body>
+    <div id="comingsoonContainer" class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="60px" alt="Saven Remedies"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto user-nav p-0 m-0" style="float:right;">
+                    <li class="menu-item-1"><a href="/" class="home-menu">Home</a></li>
+                    <li class="menu-item-1"><a href="vision.html" class="home-menu">Vision</a></li>
+                    <li class="menu-item-1 active"><a href="products.html" class="home-menu">Products</a></li>
+                    <li class="menu-item-2"><a href="about.html" class="about-menu">About Us</a></li>
+                    <li class="menu-item-3"><a href="contact.html" class="contact-menu">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="overlay">
+            <div class="info">
+                <div id="prime-content">
+                    <h1>Products</h1>
+                    <p>
+                            Savenremedies focuses on pain management (Orals & Topicals), Nutritional and general
+                            medicines.
+                    </p>
+
+                </div>
+                <div id="product-collection">
+                    <ul id="product-collection-list">
+                        <li v-for="(product,index) in products">
+                            <section>
+                                <div class="container py-3">
+                                    <div class="card">
+                                        
+
+                                            <div class="row" v-if="isProductAlignedLeft(index)">
+                                                <div v-bind:class="getProductImageAlignmentClass(index)">
+                                                    <img v-bind:src="product.productImageSource" class="w-100">
+                                                </div>
+                                                <div class="col-md-8 px-3">
+                                                    <div class="card-block px-3">
+                                                        <h4 class="card-title">{{product.productName}}</h4>
+                                                        <!-- <p class="card-text">Calsiven helps to fight with the deficiency of
+                                                                        calcium and mganesium. </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" v-else>
+                                                <div class="col-md-8 px-3">
+                                                    <div class="card-block px-3">
+                                                        <h4 class="card-title">{{product.productName}}</h4>
+                                                        <!-- <p class="card-text">Calsiven helps to fight with the deficiency of
+                                                                        calcium and mganesium. </p> -->
+                                                    </div>
+                                                </div>
+                                                <div v-bind:class="getProductImageAlignmentClass(index)">
+                                                    <img v-bind:src="product.productImageSource" class="w-100">
+                                                </div>
+
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="content-footer">
+            <div class="disclosure">
+                <p class="p-0 m-0">Copyrights &copy; 2018 Saven Remedies</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="scripts/coming-soon.js"></script>
+    <script src="scripts/products.js"></script>
+</body>
+
+</html>
