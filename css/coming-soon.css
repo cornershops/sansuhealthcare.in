@@ -50,8 +50,8 @@ div, body{
 
 .info{
     padding: 20px 40px;
-    margin: 10% auto;
-    width: 90%;
+    margin: 18% auto;
+    width: 800px;
     background: rgba(0,0,0,0.3);
     border-radius: 10px;
 }
@@ -104,7 +104,7 @@ ul li:first-child{
 
 ul li a{
     color: #fff;
-    font-size: 1vw;
+    font-size: 13px;
 }
 
 ul li a:hover{
@@ -122,11 +122,4 @@ ul li.active a{
 
 .disclosure p{
     font-size: 12px;
-}
-
-
-#prime-content{
-    min-width: 90%;
-    min-height: 150px;
-    opacity: .9;
 }

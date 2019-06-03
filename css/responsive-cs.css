@@ -6,7 +6,7 @@
     
     .content-footer{
         padding: 0 !important;
-        position: fixed;
+        position: absolute;
         left: 0
     }
     
