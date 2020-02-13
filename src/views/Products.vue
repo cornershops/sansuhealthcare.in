@@ -31,26 +31,6 @@
       <div class="line-five white-five"></div>
     </div>
 
-    <!-- /Home -->
-
-    <!--    <div class="line-one white-one"></div>
-		<div class="line-two white-two"></div>
-		<div class="line-three white-three"></div>
-		<div class="line-four white-four"></div>
-		<div class="line-five white-five"></div>
-		<div class="line-one gray-one"></div>
-		<div class="line-two gray-two"></div>
-		<div class="line-three gray-three"></div>
-		<div class="line-four gray-four"></div>
-		<div class="line-five gray-five"></div>
-			<div class="line-one ltgray-one"></div>
-			<div class="line-two ltgray-two"></div>
-			<div class="line-three ltgray-three"></div>
-			<div class="line-four ltgray-four"></div>
-    <div class="line-five ltgray-five"></div>-->
-
-    <!-- About -->
-
     <div id="about" class="section" style="padding-top:150px;">
       <!-- container -->
       <div class="container123 ct-one-plr">
@@ -61,77 +41,13 @@
               <span class="block">PRODUCTS</span>
             </h2>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur laboris nisi ut aliquip ex ea commodo consequat.
-              nervous system disorders, parasitic infections and other therapeutic categories. We are also excited about our work to
-              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              Sanus Health Care focuses on pain management (Orals & Topicals), Nutritional and general medicines. Our
+						vision is to be best in providing quality healthcare products and services towards a world of healthy and
+						happy people.
             </p>
           </div>
           <div class="col-md-12 posr z9 pt30" data-animation="fadeInUp" style="background:#fff;">
-            <table cellspacing="0" cellpadding="0" width="100%" class="cont-dept">
-              <tbody>
-                <tr class="cont-head">
-                  <td>Lorem ipsum dolor sit amet</td>
-                  <td>PRODUCT NAME</td>
-                  <td>SIZE</td>
-                  <td>PACKAGE SUM</td>
-                  <td>PRODUCT DESCRIPTION</td>
-                  <td>DRUG INFORMATION</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-
-                <tr>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-
-                <tr>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-                <tr>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                  <td>Lorem</td>
-                </tr>
-              </tbody>
-            </table>
+            <ProductList/>
           </div>
         </div>
       </div>
@@ -157,13 +73,10 @@
               >We have passion. We have ideas. We want to make a difference. It’s why we’re here.</p>
               <p
                 class="lead"
-              >When we harness the power of all 6,500 of our colleagues sharing ideas, voicing opinions and driving change, we can make great things possible.</p>
-              <p
-                class="lead"
               >We’re uniting our team around three powerful actions that we can all take every day across all roles and functions. By doing this together, we’re bringing out the best in all of us… And we’re achieving our purpose to make healthy possible for the people who need us most… patients.</p>
 
               <div class="posr mt50 block">
-                <a class="rmore" href="/about">Read More</a>
+                <!-- <a class="rmore" href="/about">Read More</a> -->
 
                 <!-- <a class="smore spritemore" href=""> <span> READMORE </span> </a> -->
               </div>
@@ -215,3 +128,14 @@
     </div>
   </div>
 </template>
+
+<script>
+
+import ProductList from '@/components/ProductsListComponent.vue'
+export default {
+  name: 'productlist',
+  components: {
+    ProductList
+  }
+}
+</script>
