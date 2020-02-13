@@ -45,24 +45,6 @@
 					<p class="mbn lh20" style="color:#797979;">--- </p>
 					<div class="pb15 pt30">
 						<p class="mbn" style="color:#797979;line-height:normal;">
-							Us Phone
-						</p>
-						<a class="pln mail">xxx-xxx-xxxx</a>
-					</div>
-					<div class="pb15 pt10">
-						<p class="mbn" style="color:#797979;line-height:normal;">
-							US Landline
-						</p>
-						<a class="pln mail">xxx-xxx-xxxx</a>
-					</div>
-					<div class="pb15 pt10">
-						<p class="mbn" style="color:#797979;line-height:normal;">
-							US Fax
-						</p>
-						<a class="pln mail">xxx-xxx-xxxx</a>
-					</div>
-					<div class="pb15 pt30">
-						<p class="mbn" style="color:#797979;line-height:normal;">
 							Email
 						</p>
 						<a href="mailto:#info@sanushealthcare.in" class="pln mail">info@sanushealthcare.in</a>

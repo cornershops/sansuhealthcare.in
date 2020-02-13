@@ -99,7 +99,7 @@
 				<div class="col-md-4" data-animation="fadeInUp">
 					<div class="about-img">
 						<img src="@/assets/images/our-manufacturing.jpg" alt="">
-						<h2 class="pt40 pb30"> OUR <span class="block"> MANuFACTURING </span> </h2>
+						<h2 class="pt40 pb30"> OUR <span class="block"> MANUFACTURING </span> </h2>
 						<p>Sanus Health Care Private Ltd is a professionally managed progressive pharmaceutical marketing company
 							head quartered at Hyderabad, Telangana, India. We at Sanus Health Care formulate, develop and
 							commercialize medicines with the AIM to provide affordable medicine needs to all.</p>
